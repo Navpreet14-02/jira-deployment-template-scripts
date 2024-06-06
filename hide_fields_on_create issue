@@ -1,0 +1,7 @@
+const deployment1 = getFieldById("customfield_10064");
+const deployment2 = getFieldById("customfield_10065");
+const deployment3 = getFieldById("customfield_10066");
+
+deployment1.setVisible(false);
+deployment2.setVisible(false);
+deployment3.setVisible(false);
