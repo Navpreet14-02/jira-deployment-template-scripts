@@ -1,0 +1,25 @@
+const deploymentType = getFieldById('customfield_10067');
+const deployment1 = getFieldById("customfield_10064")
+const deployment2= getFieldById("customfield_10065");
+const deployment3 = getFieldById("customfield_10066");
+
+const deploymentTypeValue = deploymentType.getValue().value
+
+switch(deploymentTypeValue){
+    case 'Deployment 1':
+        deployment1.setVisible(true);
+        deployment2.setVisible(false);
+        deployment3.setVisible(false);
+        break;
+    case 'Deployment 2':
+        deployment2.setVisible(true);
+        deployment1.setVisible(false);
+        deployment3.setVisible(false);
+        break;
+    case 'Deployment 3':
+        deployment3.setVisible(true);
+        deployment1.setVisible(false);
+        deployment2.setVisible(false);
+        break;
+}
+
